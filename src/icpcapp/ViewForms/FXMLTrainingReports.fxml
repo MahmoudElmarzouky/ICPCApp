@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="viewPane" prefHeight="608.0" prefWidth="1229.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="icpcapp.ViewControl.FXMLTrainingReportsController">
+   <children>
+      <TableView layoutX="9.0" layoutY="89.0" prefHeight="472.0" prefWidth="1211.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="153.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="159.0" text="Email" />
+            <TableColumn fx:id="colPhone" prefWidth="140.0" text="Phone" />
+            <TableColumn fx:id="colYear" prefWidth="113.0" text="Year" />
+            <TableColumn fx:id="colDepartment" prefWidth="150.0" text="Department" />
+            <TableColumn fx:id="colLevel" prefWidth="129.0" text="Level" />
+            <TableColumn fx:id="colTime" prefWidth="153.0" text="Time" />
+            <TableColumn fx:id="colAttendance" prefWidth="136.0" text="Attendance" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnPrint" layoutX="594.0" layoutY="567.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: #fbd323;" text="Print">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../print.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="473.0" layoutY="35.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: #fbd323;" text="All Trainee">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="txtLevels" layoutX="677.0" layoutY="35.0" prefHeight="36.0" prefWidth="175.0" promptText="Levels" style="-fx-background-color: #fbd323;" />
+      <Label layoutX="20.0" layoutY="567.0" prefHeight="36.0" prefWidth="139.0" text="Number of Trainee : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalNumber" layoutX="176.0" layoutY="568.0" prefHeight="36.0" prefWidth="71.0" />
+   </children>
+</Pane>

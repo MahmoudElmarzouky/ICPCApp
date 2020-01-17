@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="viewPane" prefHeight="608.0" prefWidth="1229.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="icpcapp.ViewControl.FXMLSettingController">
+   <children>
+      <Pane layoutX="23.0" layoutY="13.0" prefHeight="582.0" prefWidth="313.0">
+         <children>
+            <TextField fx:id="txtName" layoutX="46.0" layoutY="92.0" prefHeight="25.0" prefWidth="207.0" promptText="Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUserName" layoutX="46.0" layoutY="141.0" prefHeight="25.0" prefWidth="207.0" promptText="UserName">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassword" layoutX="46.0" layoutY="190.0" prefHeight="25.0" prefWidth="207.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhone" layoutX="46.0" layoutY="238.0" prefHeight="25.0" prefWidth="207.0" promptText="Phone">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="txtType" layoutX="46.0" layoutY="290.0" prefHeight="29.0" prefWidth="207.0" promptText="Type" style="-fx-background-color: white; -fx-border-color: #c5c5c5;" />
+            <Button layoutX="39.0" layoutY="400.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: #fbd323;" text="Add">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../plus.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="172.0" layoutY="400.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: #fbd323;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../rubbish.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="39.0" layoutY="459.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: #fbd323;" text="Update">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../refresh.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="172.0" layoutY="459.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" style="-fx-background-color: #fbd323;" text="Clear">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../clear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TableView layoutX="345.0" layoutY="96.0" prefHeight="509.0" prefWidth="878.0">
+         <columns>
+            <TableColumn fx:id="colName" prefWidth="190.0" text="Name" />
+            <TableColumn fx:id="colUserName" prefWidth="183.0" text="UserName" />
+            <TableColumn fx:id="colPassword" prefWidth="196.0" text="password" />
+            <TableColumn fx:id="colPhone" prefWidth="164.0" text="Phone" />
+            <TableColumn fx:id="colType" prefWidth="144.0" text="Type" />
+         </columns>
+         <columnResizePolicy>
+            
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="596.0" layoutY="45.0" prefHeight="29.0" prefWidth="341.0" promptText="Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

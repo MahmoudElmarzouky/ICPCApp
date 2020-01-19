@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="595.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="icpcapp.ViewControl.FXMLLoginController">
    <children>
-      <Pane layoutX="281.0" layoutY="23.0" prefHeight="354.0" prefWidth="293.0" style="-fx-background-color: #3399cc;">
+      <Pane fx:id="SettingTable" layoutX="281.0" layoutY="23.0" prefHeight="354.0" prefWidth="293.0" style="-fx-background-color: #3399cc; -fx-border-color: #3399cc;">
          <children>
             <TextField fx:id="txtUserName" layoutX="48.0" layoutY="165.0" prefHeight="25.0" prefWidth="221.0" promptText="UserName" style="-fx-background-color: #2a9ed8; -fx-border-color: red; -fx-border-width: 0px 0px 2px 0px;">
                <font>

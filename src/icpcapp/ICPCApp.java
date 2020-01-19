@@ -12,7 +12,6 @@ public class ICPCApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/icpcapp/ViewForms/FXMLLogin.fxml"));
-    
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

@@ -4,6 +4,17 @@ public class Setting {
 
     private String Name, UserName, Password, Phone, Type;
 
+    public Setting() {
+    }
+
+    public Setting(String Name, String UserName, String Password, String Phone, String Type) {
+        this.Name = Name;
+        this.UserName = UserName;
+        this.Password = Password;
+        this.Phone = Phone;
+        this.Type = Type;
+    }
+     
     public void setName(String Name) {
         this.Name = Name;
     }

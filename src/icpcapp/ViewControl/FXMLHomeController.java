@@ -14,9 +14,15 @@ public class FXMLHomeController implements Initializable {
    Pane veiw;
    @FXML
    Pane viewPane; 
+  private static String isAdmin;
+
+    public static void setIsAdmin(String isAdmin) {
+        FXMLHomeController.isAdmin = isAdmin;
+    }
    public void addRegistration(){
-    viewPane.getChildren().add(getPane("/icpcapp/ViewForms/FXMLSetting.fxml"));
+    viewPane.getChildren().add(getPane("/icpcapp/ViewForms/FXMLRegistration.fxml"));
    }
+
    
    public void addAttendance(){
     viewPane.getChildren().add(getPane("/icpcapp/ViewForms/FXMLAttendance.fxml"));
@@ -43,7 +49,8 @@ public class FXMLHomeController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      
+     viewPane.getChildren().add(getPane("/icpcapp/ViewForms/FXMLBackGround.fxml")); 
+        System.out.println(isAdmin);
     }    
     
 }
